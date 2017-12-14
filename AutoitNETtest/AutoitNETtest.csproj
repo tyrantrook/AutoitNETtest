@@ -82,5 +82,11 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AutoItX3.Assembly.dll" />
+    <Content Include="bin\AutoItX3.Assembly.xml" />
+    <Content Include="bin\AutoItX3.dll" />
+    <Content Include="bin\AutoItX3_x64.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
