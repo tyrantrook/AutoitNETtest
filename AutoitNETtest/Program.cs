@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AutoIt;
 
 namespace AutoitNETtest
 {
@@ -10,6 +7,11 @@ namespace AutoitNETtest
     {
         static void Main(string[] args)
         {
+            AutoItX.Run("notepad.exe", "C:\\Windows\\System32");
+            AutoItX.WinWaitActive("Untitled");
+            AutoItX.Send("I'm in notepad");
+            IntPtr winHandle = AutoItX.WinGetHandle("Untitled");
+            AutoItX.WinKill(winHandle);
         }
     }
 }
